@@ -1,0 +1,20 @@
+package com.evergent.CoreJAVA.WrapperClass;
+
+ class Book {
+	String name;
+	public Book(String name) {
+		this.name=name;
+		
+	}
+	public String toString(){
+		return name;
+	}
+	
+
+}
+
+public class CF9_ArrayList_BookObject{
+	public static void main(String[] args) {
+		
+	}
+}

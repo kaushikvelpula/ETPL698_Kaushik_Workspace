@@ -1,0 +1,40 @@
+package com.evergent.CoreJAVA.jdbc.mysql;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+//import java.sql.connection;
+public class ResultSetNextExampleMysql {
+	public static void main(String[] args) {
+		Connection conn = null;
+		String url="jdbc:mysql://localhost:3300/";
+		String dbname="evergentdb";
+		String driverName ="com.mysql.jdbc.Driver";
+		String username="root";
+		String Password="admin";
+		try {
+			Class.forName(driverName);
+			conn=DriverManager.getConnection(url+dbname,username,Password);
+			try {
+				Statement stmt = conn.createStatement();
+				ResultSet rs=stmt.executeQuery("select * from employee9");
+				while(rs.next()) {
+					System.out.println("employee no :"+rs.getInt(1));
+					System.out.println("employee Name :"+rs.getInt(3));
+				}
+			}
+			catch (Exception s) {
+				System.out.println(s);
+				// TODO: handle exception
+			}
+			conn.close();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		}
+		
+	}
+}

@@ -1,0 +1,5 @@
+package com.everegent.CoreJAVA.Serialization;
+
+public class Product {
+
+}

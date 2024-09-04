@@ -1,0 +1,20 @@
+package com.evergent.CoreJAVA.WrapperClass;
+
+import java.util.LinkedList;
+public class CF8_LinkedList {
+	public static void main(String[] args) {
+		LinkedList myList = new LinkedList();
+		myList.add(1);
+		myList.add("bmw");
+		myList.add("volvo");
+		myList.addFirst("maruti");
+		myList.addLast("safari");
+		
+		myList.remove(4);
+		System.out.println(myList);
+		myList.clear();
+		System.out.println(myList);
+		
+	}
+}
+

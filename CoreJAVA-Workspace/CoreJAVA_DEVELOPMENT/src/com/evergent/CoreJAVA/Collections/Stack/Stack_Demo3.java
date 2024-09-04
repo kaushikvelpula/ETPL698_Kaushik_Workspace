@@ -1,0 +1,17 @@
+package com.evergent.CoreJAVA.Collections.Stack;
+import java.util.Stack;
+public class Stack_Demo3 {
+	public static void main(String[] args) {
+		Stack myStack = new Stack();
+		myStack.push("Red");
+		myStack.push("Black");
+		myStack.push("White");
+	//	System.out.println(myStack);
+	//	System.out.println(myStack.pop());
+		System.out.println(myStack.get(2));
+		myStack.clear();
+		System.out.println(myStack.search("Black"));
+		System.out.println(myStack);
+	}
+
+}

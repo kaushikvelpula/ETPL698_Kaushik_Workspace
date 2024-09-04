@@ -1,0 +1,38 @@
+package com.evergent.CoreJAVA.Collections;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+public class CF14_ArrayList_Hashset {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<String> list =new ArrayList<>();
+		list.add("corejava");
+		list.add("j2ee");
+		list.add("j2se");
+		list.add("myjava");
+		list.add("corejava");
+		//list.add("core");
+		System.out.println(list);
+		Set<String> set=new HashSet<String>();
+		
+		set.addAll(list);
+		System.out.println(set);
+		Set<String> s1=new HashSet<String>();
+		s1.add("corejava");
+		s1.add("j2ee");
+		s1.add("j2ee");
+		s1.add("myjava");
+		s1.add("corejava");
+		if(set.equals(s1)) {
+			System.out.println("same");
+		}
+		else {
+			System.out.println("not same");
+		}
+		System.out.println(set.contains(s1));
+		
+		
+	}
+}

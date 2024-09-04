@@ -1,0 +1,24 @@
+package com.evergent.CoreJAVA.ExceptionalHandling;
+
+public class ExceptionDemo8 {
+	String nameString=null;
+	int k=2;
+	public void myData() throws ArithmeticException {
+		
+			System.out.println("one");
+			System.out.println(nameString.length());
+			int t=10/k;
+			System.out.println("End");
+		
+		
+	}
+ public static void main(String[] args) {
+	 try {
+	ExceptionDemo8 ed2=new ExceptionDemo8();
+	ed2.myData();
+	 }
+	 catch(NullPointerException e) {
+		 System.out.println(e);
+	 }
+}
+}

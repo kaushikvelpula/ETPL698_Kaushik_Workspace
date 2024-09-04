@@ -1,0 +1,24 @@
+package com.evergent.CoreJAVA.Collections;
+
+import java.util.LinkedHashSet;
+public class CF_13_LinkedHashedSet {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+LinkedHashSet<String> list=new LinkedHashSet<>();
+list.add("Apple");
+list.add("banana");
+list.add("Orange");
+list.add("Grapes");
+System.out.println("linkedhashset is "+list);
+System.out.println("iterating over linkedhashset");
+for(String fruit:list) {
+	System.out.println(fruit);
+}
+System.out.println("containds mango "+list.contains("mango"));
+list.remove("banana");
+System.out.println("after removing banana"+list);
+System.out.println("size of linkedhashset"+list.size());
+list.clear();
+System.out.println("after cleraing "+list);
+	}
+}

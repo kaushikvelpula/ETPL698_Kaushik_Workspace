@@ -1,0 +1,5 @@
+package com.evergent.CoreJAVA.JavaBeans;
+
+public class StudentBean {
+
+}

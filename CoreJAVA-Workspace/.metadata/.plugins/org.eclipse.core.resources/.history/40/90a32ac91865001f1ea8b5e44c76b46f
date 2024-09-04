@@ -1,0 +1,13 @@
+package com.everegent.CoreJAVA.Collections.Maps;
+import java.util.Hashtable;
+public class HashMapDemo2 {
+	public static void main(String[] args) {
+		Hashtable mymap = new Hashtable();
+		mymap.put(100,"Ramesh");
+		mymap.put(200,"Bhanu");
+		mymap.put(300,"Abass");
+		mymap.put(100,"Xyz");
+		System.out.println(mymap);
+	}
+
+}
